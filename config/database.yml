@@ -1,0 +1,11 @@
+# Based on https://github.com/salsify/avro-schema-registry/blob/v0.10.0/config/database.yml
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
