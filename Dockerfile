@@ -2,7 +2,7 @@ FROM ruby:2.3.3
 
 LABEL maintainer="andrew@andrew-jones.com"
 
-ENV VERSION=0.10.0
+ENV VERSION=0.11.0
 
 ENV RAILS_ENV=development
 
